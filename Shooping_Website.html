@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Seo friendly-->
+     <meta name="author" content="ejob"/>
+     <meta name="description" content="lorem ipsum"/>
+     <meta name="keywords" content="ejob,ejobindia"/>
+     <!--Responsive ui/ux-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Page</title>
+    <!--Adding Bootstrap 4 CSS local CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!--Adding Bootstrap 4 JS local CDN-->
+    <!--jQuery local CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!--bootstrap.bundle.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+      *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: rgb(234, 228, 228);
+        background-image: url(./wallpaper.avif);
+      }
+      
+      nav{
+        background-color: rgb(20, 37, 55);
+      }
+      .logo img{
+        width:70px;
+        margin-right: 8px;
+      }
+      li.nav-item{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      li.nav-item:hover {
+        transition: all 0.6s ease-in-out;
+        background-color: #bca43b;
+        color:#ccc;
+      }
+      .navbar-brand{
+        font-size: 45px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+      }
+      .SectionHeader{
+        text-align: center;
+        margin-top:-1px;
+      }
+      .carousel-inner img{
+        
+        padding-top: 1px;
+        height:500px;
+        width: 100%;
+      }
+      .carousel-caption{
+        color: #040739;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+      }
+      .container{
+        position:relative;
+      }
+      .img-caption{
+        position:absolute;
+        top:25%;
+        color:black;
+        padding:70px;
+        font-family: cursive;
+      }
+      .new img{
+        padding-top: 20px;
+        height: 1opx;  
+      }
+      h1{
+        font-family: "Sofia", sans-serif;
+        color: rgb(0, 6, 5);
+      }
+    
+      .btn1:hover{
+        background-color: #113c6b;
+        transition: all 0.6s ease-in-out;
+      }
+      img {
+        max-width: 100%;
+        max-height:100%;
+      }
+      @media only screen and (max-width:768px){
+            .card{
+                background-color: #bee2dd;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-align: justify;
+                font-size: 18px;
+            }
+         }
+      
+    </style>
+</head>
+
+<body>
+     <!---Add Bootstrap Navbar-->
+     <nav class="navbar navbar-expand-lg navbar-dark width=100%">
+      <div class="logo">
+        <a herf="#"><img src="./logo_image.jpg" alt="no image">    </a>
+      </div>
+        <a class="navbar-brand" href="#">Jewel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">COLLECTIONS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">STORE</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                JEWELLERY
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Earrings</a>
+                <a class="dropdown-item" href="#">Necklaces</a>
+                <a class="dropdown-item" href="#">Rings</a>
+                <a class="dropdown-item" href="#">Bracelets</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!----End of navbar-->
+      <div class="SectionHeader">
+        <header lass="SectionHeader-Heading u-h1" style="background-color: #c2a84d; height: 50px; padding-top: 17px; color: white;"><h5><marquee>EXTRA 10% OFF |  USE CODE: 10JEWEL SHOP ABOVE &#8377 1000/-</marquee></h5>
+         
+        </header>
+      </div>
+      <!---Add bootstarp Slider-->
+      <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" >
+              <img class="d-block w-100" src="./photo-collage.png.png" alt="no image" title="First slide">
+              <div class="carousel-caption  d-md-block">
+                <h1>For Every Celebrations!!!!</h1>
+                <h5 style="color:darkmagenta">TURN YOUR MOMENTS INRO MEMORIES</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./homeimage2.jpg" alt="no image" title="Second slide">
+              <div class="carousel-caption  d-md-block text-left">
+                <h4 style="color:rgb(1, 7, 6)">Add jewellery to</h4>
+                <h4 style="color:rgb(1, 7, 6)">your daily wardrobe with....</h4>
+                <h1 style="color: #b80c37;">Everyday Essentials </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./homeimage3.jpg" alt="no image" title="Third slide">
+              <div class="carousel-caption  text-left d-md-block">
+                <h1>MUHURAT</h1>
+                <h4 style="color:rgb(28, 114, 114)">Exclusive Wedding Jewellery</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./homeimage4.jpg" alt="no image" title="Fourth slide">
+              <div class="carousel-caption  text-center d-md-block">
+                <h2 style="color:rgb(50, 17, 100)">THE EXCLUSIVE ENSEMBLE</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./homeimage5.jpg" alt="no image" title="Fifth slide">
+              <div class="carousel-caption  text-center d-md-block">
+                <h2 style="color:black">Best design makes you more special....</h2>
+                </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!---End of the slider-->
+
+      <!---Add Jewellery Products -->
+      <header>
+        <div><h2 style="text-align: center; color:#0a0d3f">Categories</h2></div>
+      </header>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./jewellery1.jpg" alt="no image" title="jewellery 1" width="100%"></div>
+            <div class="overlay-text">
+              <h4 style="color: #000000;">Zircons</h4>
+            </div>
+          </div> 
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./jewellery2.jpg" alt="no image" title="jewellery 2" width="100%"></div>
+            <div class="overlay-text">
+              <h4 style="color: #000008;">Majestic Rings</h4>
+            </div>
+          </div> 
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./jewellery3.webp" alt="no image" title="jewellery 3" width="100%"></div>
+            <div class="overlay-text">
+              <h4 style="color: #000110;">Goldy Bangles</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./jewellery4.jpg" alt="no image" title="jewellery 4" width="100%"></div>
+            <div class="overlay-text">
+              <h4 style="color: #000108;">Gracious Jhumkas</h4>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <header>
+        <div><h2 style="text-align: center; color:#0a0d3f">Bestselling Products</h2></div>
+      </header>
+
+       <!---Add Jewellery images-->
+       <section class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./product1.jpg" alt="no image" title="product 1" width="100%"></div>
+            <div class="overlay-text">
+              <p>Gold Plated Necklace</p>
+              <h6 style="color: #0c1287;">&#8377 1,999.00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./product2.jpg" alt="no image" title="product 2" width="100%"></div>
+            <div class="overlay-text">
+              <p>Kundan Jhumka</p>
+              <h6 style="color: #0c1287;">&#8377 599.27</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./product3.jpg" alt="no image" title="product 3" width="100%"></div>
+            <div class="overlay-text">
+              <p>Golden Statement Bracelet</p>
+              <h6 style="color: #0c1287;">&#8377 399.00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./product-4.jpg" alt="no image" title="product 4" width="100%"></div>
+            <div class="overlay-text">
+              <p>Antique Necklace</p>
+              <h6 style="color: #0c1287;">&#8377 799.15</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./product5.webp" alt="no image" title="product 5" width="100%"></div>
+            <div class="overlay-text">
+              <p>Antique Bangle</p>
+              <h6 style="color: #0c1287;">&#8377 1,299.17</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./product7.jpg" alt="no image" title="product 6" width="100%"></div>
+            <div class="overlay-text">
+              <p>Zircon Necklace</p>
+              <h6 style="color: #0c1287;">&#8377 2,999.00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-lrght mb-2">
+            <div class="card-body"><img src="./product6.jpg" alt="no image" title="product 7" width="100%"></div>
+            <div class="overlay-text">
+              <p>Golden Temple Fingure Ring</p>
+              <h6 style="color: #0c1287;">&#8377 599.00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body"><img src="./product8.webp" alt="no image" title="product 8" width="100%"></div>
+            <div class="overlay-text">
+              <p>Golden Temple Fingure Ring</p>
+              <h6 style="color: #0c1287;">&#8377 699.00</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+       </section>
+      <!---Add button-->
+      <div class="row">
+        <div class="col-lg-6 text-center m-auto ">
+          <button class="btn1 text-white bg-dark">VIEW ALL</button>
+        </div>
+      </div>
+      <!-----Know About us-->
+      <main>
+        <fieldset class="card m-3 p-3" style="padding-top:3px; padding-bottom:3px; height: 100%; background-image: url(wallpaper.avif);">
+          <section class="row">
+            <div class="col-l-8" >
+              <img src="./about_image.jpg" alt="no image" height="500px" width="300%">
+            </div>
+            <div class="col-lg-6" style="padding-left: 50px;">
+              <div>
+              <header><h3 style="color: #0a0d3f;">About Us</h3></header>
+              <p><h5 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white; text-align: justify;">India’s beauty lies in its diversity. Every part of India has its unique jewellery, the expertise to create those exist only in that region, passed on through generations. Jewel is the biggest strength is in these craftsmen who create unique designs just for us from every nook and corner of India. And this range of jewellery, with those subtle nuances and the perfect finish which you won’t find anywhere else is what we bring you through our various brands.....</h5></p></div>
+            </div>
+          </section>
+      </fieldset> 
+      </main>
+
+
+     <!---Add Google map-->
+      <main>
+        <fieldset class="card m-3 p-3" style="padding-top:3px; padding-bottom:3px; height: 100%; background-image: url(wallpaper.avif);">
+          <legend><h4 style="color: #0a0d3f;">Contact Us</h4></legend>
+          <section class="row">
+            <div class="col-lg-8 border-right">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1291420393327!2d88.36787437508356!3d22.76058817935829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89a5186d1c681%3A0x9f55a93cfe0cc383!2sBarrackpore%20Railway%20Station!5e0!3m2!1sen!2sin!4v1731052743604!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-4">
+              <form>
+                <header class="modal-header bg-warning text-white"><h4>Message Us</h4></header>
+                <div class="form-group">Name:<input type="text" name="t1" id="t1" requird class="form-control"> </div>
+                <div class="form-group">Email:<input type="text" name="t2" id="t2" requird class="form-control"></div>
+                <div class="form-group">Phone:<input type="number" name="t3" id="t3" requird class="form-control"></div>
+                <div class="form-group">Comment:<textarea name="t4" id="t4" rows="4" cols="30" requird class="form-control"></textarea></div>
+                <div class="form-group"><button class="btn btn-sm btn-outline-primary">Submit</button> </div>
+              </form>
+            </div>
+          </section>
+        </fieldset>
+      </main>
+
+      <!--Placing Bootstrap 4 free Footer template-->
+       <footer
+       class="text-center text-lg-start text-white"
+       style="background-color: #ae9f78"
+       >
+       <!--Social media Section -->
+ <section class="d-flex justify-content-between p-4" style="background-color: #d6ccb2">
+   <!-- Left -->
+   <div class="me-5" style="margin-left: 500px; padding-top: 30PX">
+      <span><h4 style="color:black;" >Subscribe for Jewel</h4></span>
+      <span><h6 style="color:black">Get E-mail updates about our latest shop and special offers.</h6></span>
+      <div class="form-group" style="color: black; text-align: right; margin-right: 35px; margin-left: 80px; display: flex;">Email:<input type="text" name="t2" id="t2"></div>
+      <div class="form-group"><button class="btn btn-sm btn-dark">Subscribe</button> </div>
+   </div>
+   <!-- Right -->
+   <div>
+     <a href="" class="text-white me-4">
+       <i class="fab fa-facebook-f"></i>
+     </a>
+     <a href="" class="text-white me-4">
+       <i class="fab fa-twitter"></i>
+     </a>
+     <a href="" class="text-white me-4">
+       <i class="fab fa-google"></i>
+     </a>
+     <a href="" class="text-white me-4">
+       <i class="fab fa-instagram"></i>
+     </a>
+     <a href="" class="text-white me-4">
+       <i class="fab fa-linkedin"></i>
+     </a>
+     <a href="" class="text-white me-4">
+       <i class="fab fa-github"></i>
+     </a>
+   </div>
+   <!-- Right -->
+ </section>
+ <!-- Section: Social media -->
+ <section class="">
+   <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+     <div class="row mt-3">         
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">        
+         <!-- Content -->
+         <h6 class="text-uppercase fw-bold">Shop With Us</h6>
+         <hr
+             class="mb-4 mt-0 d-inline-block mx-auto"
+             style="width: 60px; background-color: #210e55; height: 2px"
+             />
+             <p>
+              <a href="#!" class="text-white">Wholesale Information</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Designers & Team</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Book an Appointment</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Track your order</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Real Women by Jewel</a>
+            </p>
+       </div>
+
+       <!-- Grid column -->
+       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold">OUR POLICIES</h6>
+         <hr
+             class="mb-4 mt-0 d-inline-block mx-auto"
+             style="width: 60px; background-color: #210e55; height: 2px"
+             />
+         <p>
+           <a href="#!" class="text-white">Terms of Service</a>
+         </p>
+         <p>
+           <a href="#!" class="text-white">Privacy Policy</a>
+         </p>
+         <p>
+           <a href="#!" class="text-white">Shipping/Return Policy</a>
+         </p>
+         <p>
+           <a href="#!" class="text-white">Byback & Exchange Policy</a>
+         </p>
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold">Useful links</h6>
+         <hr
+             class="mb-4 mt-0 d-inline-block mx-auto"
+             style="width: 60px; background-color: #210e55; height: 2px"
+             />
+         <p>
+           <a href="#!" class="text-white">Your Account</a>
+         </p>
+         <p>
+           <a href="#!" class="text-white">Become an Affiliate</a>
+         </p>
+         <p>
+           <a href="#!" class="text-white">Shipping Rates</a>
+         </p>
+         <p>
+           <a href="#!" class="text-white">Help</a>
+         </p>
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold">Contact me</h6>
+         <hr
+             class="mb-4 mt-0 d-inline-block mx-auto"
+             style="width: 60px; background-color: #210e55; height: 2px"
+             />
+         <p><i class="fas fa-home mr-3"></i> 31, KM Shah St, Serampore, West Bengal 712201</p>
+         <p><i class="fas fa-envelope mr-3"></i> jewel@example.com</p>
+         <p><i class="fas fa-phone mr-3"></i> + 91 7922310550</p>
+         
+       </div>
+       <!-- Grid column -->
+     </div>
+     <!-- Grid row -->
+   </div>
+ </section>
+ <!-- Section: Links  -->
+
+ <!-- Copyright -->
+ <div
+      class="text-center p-3"
+      style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+   &copy; 2024 Copyright:
+   <a class="text-white" href="#"
+      >Jewel.com</a
+     >
+ </div>
+ <!-- Copyright -->
+</footer>
+</body>
+</html>
